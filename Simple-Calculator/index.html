@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="author" content="Dimitar Dimitrov" />
+    <meta name="keywords" content="calculator" />
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="assets/style/main.css"/>
+</head>
+<body>
+    <div id="calculator-window">
+        <header>
+            <h1 id="calculator-title">Simple Calculator</h1>
+            <nav id="calculator-navigation-bar">
+                <ul>
+                    <li id="file">
+                        File
+                        <ul id="file-menu">
+                            <li>
+                                <a href="#" title="Open file">Open</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="edit">
+                        Edit
+                        <ul id="edit-menu">
+                            <li>
+                                <a href="#" title="Tooggle keyboard mode">Toggle keyboard mode</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="about">
+                        About
+                        <ul id="about-menu">
+                            <li>
+                                <a href="#" title="Feedback">Feedback</a>
+                            </li>
+                            <li>
+                                <a href="#" title="About">About</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <article id="calculator-body">
+            <div id="calculator-display">
+                <input type="text" id="input" placeholder="0" disabled="disabled"/>
+            </div>
+            <div id="calculator-keypad">
+                <div>
+                    <button class="calculator-key" id="delete-all-button" value="">CE</button>
+                    <button id="delete-button" value="delete">C</button>
+                </div>
+                <div>
+                    <button id="one-button" value="1">1</button>
+                    <button id="two-button" value="2">2</button>
+                    <button id="three-button" value="3">3</button>
+                    <button id="plus-button" value="+">+</button>
+                </div>
+                <div>
+                    <button id="four-button" value="4">4</button>
+                    <button id="five-button" value="5">5</button>
+                    <button id="six-button" value="6">6</button>
+                    <button id="minus-button" value="-">-</button>
+                </div>
+                <div>
+                    <button id="seven-button" value="7">7</button>
+                    <button id="eight-button" value="8">8</button>
+                    <button id="nine-button" value="9">9</button>
+                    <button id="multiply-button" value="*">*</button>
+                </div>
+                <div>
+                    <button id="float-button" value=".">.</button>
+                    <button id="zero-button" value="0">0</button>
+                    <button id="equal-button" value="=">=</button>
+                    <button id="divide-button" value="/">/</button>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!--MAIN JS-->
+    <script src="assets/script/main.js"></script>
+</body>
+</html>
