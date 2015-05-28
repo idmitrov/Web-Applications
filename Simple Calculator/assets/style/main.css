@@ -1,0 +1,186 @@
+html, body, div, span, header, h1, article, nav, ul, li, a, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Firefox */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Opera */
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+html {
+  font: 10px 'Calibri', 'Arial', sans-serif;
+  color: #555; }
+  html body {
+    text-align: center;
+    background-color: #333; }
+    html body #calculator-window {
+      margin: 5% auto;
+      width: 34rem;
+      height: 100%;
+      padding: 1rem;
+      background-color: #EEE;
+      border-radius: 1%;
+      box-shadow: 0 0 1rem #FFF; }
+      html body #calculator-window header #calculator-title {
+        width: 100%;
+        height: 2.5rem;
+        padding-bottom: 1rem;
+        font-family: monospace, sans-serif;
+        font-size: 1.6rem;
+        color: #777; }
+      html body #calculator-window header #calculator-navigation-bar {
+        position: relative;
+        text-align: left; }
+        html body #calculator-window header #calculator-navigation-bar ul {
+          list-style-type: none; }
+          html body #calculator-window header #calculator-navigation-bar ul li {
+            display: inline-block;
+            font-size: 1.4rem;
+            padding: 0.5rem; }
+            html body #calculator-window header #calculator-navigation-bar ul li a {
+              text-decoration: none;
+              color: #333; }
+            html body #calculator-window header #calculator-navigation-bar ul li#file:hover, html body #calculator-window header #calculator-navigation-bar ul li#edit:hover, html body #calculator-window header #calculator-navigation-bar ul li#about:hover {
+              background-color: #CCC;
+              cursor: pointer; }
+            html body #calculator-window header #calculator-navigation-bar ul li#file #file-menu li, html body #calculator-window header #calculator-navigation-bar ul li#edit #edit-menu li, html body #calculator-window header #calculator-navigation-bar ul li#about #about-menu li {
+              display: block; }
+              html body #calculator-window header #calculator-navigation-bar ul li#file #file-menu li a, html body #calculator-window header #calculator-navigation-bar ul li#edit #edit-menu li a, html body #calculator-window header #calculator-navigation-bar ul li#about #about-menu li a {
+                display: block;
+                padding: 1rem; }
+            html body #calculator-window header #calculator-navigation-bar ul li#file #file-menu {
+              display: none;
+              position: absolute;
+              top: 2.8rem;
+              left: 0;
+              background-color: #CCC;
+              text-align: center; }
+            html body #calculator-window header #calculator-navigation-bar ul li#file:hover #file-menu {
+              display: block;
+              position: absolute;
+              -webkit-animation: fadein 2s;
+              /* Safari and Chrome */
+              -moz-animation: fadein 2s;
+              /* Firefox */
+              -ms-animation: fadein 2s;
+              /* Internet Explorer */
+              -o-animation: fadein 2s;
+              /* Opera */
+              animation: fadein 2s; }
+            html body #calculator-window header #calculator-navigation-bar ul li#edit #edit-menu {
+              display: none;
+              position: absolute;
+              top: 2.8rem;
+              left: 0;
+              background-color: #CCC;
+              text-align: center; }
+            html body #calculator-window header #calculator-navigation-bar ul li#edit:hover #edit-menu {
+              position: absolute;
+              -webkit-animation: fadein 2s;
+              /* Safari and Chrome */
+              -moz-animation: fadein 2s;
+              /* Firefox */
+              -ms-animation: fadein 2s;
+              /* Internet Explorer */
+              -o-animation: fadein 2s;
+              /* Opera */
+              animation: fadein 2s;
+              display: block; }
+            html body #calculator-window header #calculator-navigation-bar ul li#about #about-menu {
+              display: none;
+              position: absolute;
+              top: 2.8rem;
+              left: 6.6rem;
+              background-color: #CCC;
+              text-align: center; }
+            html body #calculator-window header #calculator-navigation-bar ul li#about:hover #about-menu {
+              display: block;
+              position: absolute;
+              -webkit-animation: fadein 2s;
+              /* Safari and Chrome */
+              -moz-animation: fadein 2s;
+              /* Firefox */
+              -ms-animation: fadein 2s;
+              /* Internet Explorer */
+              -o-animation: fadein 2s;
+              /* Opera */
+              animation: fadein 2s; }
+      html body #calculator-window #calculator-body {
+        width: 100%;
+        padding: 1rem;
+        background-color: #DDD;
+        border: solid 0.1rem #CCC; }
+        html body #calculator-window #calculator-body #calculator-display #input {
+          width: 100%;
+          padding: 1rem;
+          font-size: 4rem;
+          text-align: right;
+          border: solid 0.1rem #CCC; }
+        html body #calculator-window #calculator-body #calculator-keypad {
+          width: 100%;
+          height: 100%;
+          padding-top: 2rem;
+          cursor: default; }
+          html body #calculator-window #calculator-body #calculator-keypad div {
+            height: 25%; }
+            html body #calculator-window #calculator-body #calculator-keypad div:first-of-type {
+              width: 100%;
+              text-align: right; }
+          html body #calculator-window #calculator-body #calculator-keypad button {
+            font-size: 4rem;
+            padding: 1rem;
+            margin: 0.5rem 0 0 0.3rem;
+            width: 7rem;
+            color: #555;
+            border: none;
+            outline: none;
+            cursor: pointer; }
+            html body #calculator-window #calculator-body #calculator-keypad button:first-of-type {
+              margin-left: 0; }
+            html body #calculator-window #calculator-body #calculator-keypad button:hover {
+              color: #333; }
+    html body .about {
+      position: absolute;
+      top: 6.8rem;
+      left: 11rem;
+      width: 40rem;
+      height: 53rem;
+      text-align: center;
+      font-size: 3rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      -webkit-animation: fadein 2s;
+      /* Safari and Chrome */
+      -moz-animation: fadein 2s;
+      /* Firefox */
+      -ms-animation: fadein 2s;
+      /* Internet Explorer */
+      -o-animation: fadein 2s;
+      /* Opera */
+      animation: fadein 2s; }
+
+/*# sourceMappingURL=main.css.map */
