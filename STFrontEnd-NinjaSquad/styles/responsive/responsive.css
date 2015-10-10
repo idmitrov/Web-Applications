@@ -1,0 +1,7 @@
+@media screen and (max-width: 979px) {
+  html body {
+    background-color: #444; }
+    html body #wrapper {
+      background-color: #00B0DE; } }
+
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Source Sans Pro Black';
+  src: url("../Fonts/SourceSansPro-Black.ttf"); }
+@font-face {
+  font-family: 'Source Sans Pro Normal';
+  src: url("../Fonts/SourceSansPro-Regular.ttf"); }
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url("../Fonts/SourceSansPro-Light.ttf"); }
+@font-face {
+  font-family: 'Source Sans Pro Semibold';
+  src: url("../Fonts/SourceSansPro-Semibold.ttf"); }
+
+/*# sourceMappingURL=fonts.css.map */

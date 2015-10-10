@@ -1,0 +1,21 @@
+// RESET
+html, body, div, span,
+header, h1, h2, p, mark,
+section, article, aside
+img,
+nav, ul, li, a,
+time,
+details, summary,
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
