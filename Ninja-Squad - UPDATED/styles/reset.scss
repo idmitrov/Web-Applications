@@ -1,0 +1,22 @@
+html, body, div, span,
+header, h1, h2, p,
+footer,
+section, article,
+nav, ul, li, a,
+img,
+input,
+time {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
