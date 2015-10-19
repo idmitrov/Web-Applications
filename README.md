@@ -1,2 +1,1 @@
-# Web-Applications - Development in my free time
-Web based apps
+# Applications based on web technologies such as HTML5, JavaSCript, CSS3 and etc...
